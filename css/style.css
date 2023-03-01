@@ -1,0 +1,144 @@
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: url(../asse/wallhaven.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.perant
+{
+    background: #eee;
+
+}
+.container
+{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    height: fit-content;
+    padding-right: 15px;
+    background-color: #aaa;
+}
+/* MEDIA QUERIES */
+/* small screens */
+@media (min-width: 768px) {
+    .container
+    {
+        width: 750px;
+    }
+}
+
+/* mediam screens */
+@media (min-width: 992px) {
+    .container
+    {
+        width: 970px;
+    }
+}
+/* large screens */
+@media (min-width: 1200px) {
+    .container
+    {
+        width: 1170px;
+    }
+}
+/* END GLOBAL RULES */
+
+/* START HEADER */
+.header
+{
+    padding: 20px;
+}
+.header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo
+{
+    width: 120px;
+}
+.header .links
+{
+    position: relative;
+}
+.header .links .icon
+{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span
+{
+    background-color: #222;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span:first-child
+{
+    width: 100%;
+    
+}
+.header .links .icon span:nth-child(2)
+{
+    width: 60%;
+    transition: 0.4s ease-in-out;
+}
+.header .links .icon span:last-child
+{
+    width: 100%;
+}
+/* hover */
+.header .links:hover span:nth-child(2){
+    width: 100%;
+}
+/* header ul */
+.header .links ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    transition: 0.3s;
+    top: calc(100% + 15px);
+    display: none;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul::before
+{
+    content: "";
+    border-color: #ff000000 #00800000 #eee #ff000000;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    right: 5px;
+    top: -22px;
+}
+.header .links ul li a
+{
+    display: block;
+    padding: 15px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #222;
+    transition: 0.3s ease-in-out;
+}
+.header .links ul li a:hover
+{
+    padding-left: 25px;
+}
+
