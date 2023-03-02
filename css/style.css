@@ -164,7 +164,7 @@ body
 {
     background-image: url(../images/jo-jo-RcZw8HE5ihU-unsplash.jpg);
     background-size: cover;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 70px);
     position: relative;
 }
 .landing .intro-text
