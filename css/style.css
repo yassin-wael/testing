@@ -245,5 +245,9 @@ body
     .special-heading {
       font-size: 60px;
     }
-  }
+    .header
+    {
+        padding: 1px;
+    }
+ }
   
